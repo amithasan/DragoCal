@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>DragoCal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/jQuery.fastClick.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="">DragoCal<small>Scientific</small></h2>
+        <div id="menu" class="list-group m">
+            <a href="#" class="list-group-item active">
+                Select Operation
+            </a>
+            <a href="#" class="list-group-item alg">Algebra</a>
+            <a href="#" class="list-group-item log">Logarithm</a>
+            <a href="#" class="list-group-item pow">Power</a>
+            <a href="#" class="list-group-item tri">Trigonometry</a>
+            <a href="#" class="list-group-item pnc">Permutation & Combination</a>
+        </div>
+        <div id="alg" class="panel panel-success section">
+            <div class="panel-heading">
+                <h3 class="panel-title">Algebra</h3>
+            </div>
+            <div class="panel-body">
+
+                <div class="">
+                    <input id="first" type="number" class="form-control" placeholder="1st Value" />
+                </div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button id="plus" type="button" class="btn btn-default">+</button>
+                        <button id="minus" type="button" class="btn btn-default">-</button>
+                        <button id="times" type="button" class="btn btn-default">&times;</button>
+                        <button id="divide" type="button" class="btn btn-default">&divide;</button>
+                        <button id="remainder" type="button" class="btn btn-default">%</button>
+                    </div>
+                </div>
+                <div class="">
+                    <input id="second" type="number" class="form-control" placeholder="2nd Value" />
+                </div>
+                <div class="resultdiv">
+                    <h3 id="algresult">= 0.0</h3>
+                </div>
+                <ul class="pager">
+                    <li class="previous algtomenu"><a href="#">&larr; Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="log" class="panel panel-success section">
+            <div class="panel-heading">
+                <h3 class="panel-title">Logarithm</h3>
+            </div>
+            <div class="panel-body">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button id="log10" type="button" class="btn btn-default">log</button>
+                        <button id="ln" type="button" class="btn btn-default">ln</button>
+                    </div>
+                </div>
+                <div class="">
+                    <input id="vlog" type="number" class="form-control" placeholder="Value" />
+                </div>
+                <div class="resultdiv">
+                    <h3 id="logresult">= 0.0</h3>
+                </div>
+                <ul class="pager">
+                    <li class="previous logtomenu"><a href="#">&larr; Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="pow" class="panel panel-success section">
+            <div class="panel-heading">
+                <h3 class="panel-title">Power</h3>
+            </div>
+            <div class="panel-body">
+                <div class="">
+                    <input id="base" type="number" class="form-control" placeholder="Base" />
+                </div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button id="tothe" type="button" class="btn btn-default">To the</button>
+                    </div>
+                </div>
+                <div class="">
+                    <input id="power" type="number" class="form-control" placeholder="power" />
+                </div>
+                <div class="resultdiv">
+                    <h3 id="powresult">= 0.0</h3>
+                </div>
+                <ul class="pager">
+                    <li class="previous powtomenu"><a href="#">&larr; Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="tri" class="panel panel-success section">
+            <div class="panel-heading">
+                <h3 class="panel-title">Trigonometry</h3>
+            </div>
+            <div class="panel-body">
+               
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button id="sin" type="button" class="btn btn-default">sin</button>
+                        <button id="cos" type="button" class="btn btn-default">cos</button>
+                        <button id="tan" type="button" class="btn btn-default">tan</button>
+                    </div>
+                </div>
+                <div class="">
+                    <input id="angle" type="number" class="form-control" placeholder="Angle" />
+                </div>
+                <div class="resultdiv">
+                    <h3 id="triresult">= 0.0</h3>
+                </div>
+                <ul class="pager">
+                    <li class="previous tritomenu"><a href="#">&larr; Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="pnc" class="panel panel-success section">
+            <div class="panel-heading">
+                <h3 class="panel-title">Permutation & Combination</h3>
+            </div>
+            <div class="panel-body">
+                <div id="">
+                    <input id="n" type="number" class="form-control" placeholder="n" />
+                </div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button id="per" type="button" class="btn btn-default">P</button>
+                        <button id="com" type="button" class="btn btn-default">C</button>
+                    </div>
+                </div>
+                <div class="">
+                    <input id="r" type="number" class="form-control" placeholder="r" />
+                </div>
+                <div class="resultdiv">
+                    <h3 id="pncresult">= 0</h3>
+                </div>
+                <ul class="pager">
+                    <li class="previous pnctomenu"><a href="#">&larr; Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
